@@ -1,0 +1,28 @@
+@startuml
+title Telco Customer Churn Prediction - MLOps Architecture
+
+actor "Data Source\n(Kaggle)" as DS
+actor "Developer / Student" as DEV
+
+component "GitHub Repository\n(Code Versioning)" as GIT
+component "DVC\n(Data Versioning)" as DVC
+component "Google Colab\n(Compute Environment)" as COLAB
+
+component "Raw Dataset\n(CSV)" as RAW
+component "Data Preprocessing\n(EDA + Cleaning)" as PREP
+component "Model Training\n(ML Model)" as TRAIN
+component "Model Evaluation\n(Metrics)" as EVAL
+
+DEV --> GIT : Push / Pull Code
+DS --> RAW : Download Dataset
+
+RAW --> DVC : Track Dataset
+DVC --> COLAB : Pull Versioned Data
+
+GIT --> COLAB : Fetch Code
+COLAB --> PREP : Execute Notebook
+PREP --> TRAIN : Processed Features
+TRAIN --> EVAL : Predictions
+
+EVAL --> GIT : Commit Results\n(Reports / Docs)
+@enduml
