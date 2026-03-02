@@ -11,3 +11,7 @@ Customer churn is a major challenge for telecom companies.
 This project aims to:
 - Predict whether a customer will churn
 - Help businesses take proactive retention actions
+
+---
+
+## 🏗️ Project Architecture
