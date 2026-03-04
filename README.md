@@ -15,3 +15,8 @@ This project aims to:
 ---
 
 ## 🏗️ Project Architecture
+User → Frontend (ChurnIQ UI) → Backend API → ML Model → Prediction Output
+↑
+DVC Pipeline
+↑
+Versioned Dataset
