@@ -20,3 +20,12 @@ User → Frontend (ChurnIQ UI) → Backend API → ML Model → Prediction Outpu
 DVC Pipeline
 ↑
 Versioned Dataset
+---
+
+## ⚙️ Tech Stack
+
+### 🧠 Machine Learning
+- Python
+- Scikit-learn
+- Pandas
+- NumPy
