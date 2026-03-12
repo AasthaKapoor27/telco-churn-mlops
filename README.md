@@ -30,3 +30,7 @@ Versioned Dataset
 - Scikit-learn
 - Pandas
 - NumPy
+
+### 🔄 MLOps
+- DVC (Data Version Control)
+- Git & GitHub
