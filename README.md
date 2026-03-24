@@ -37,3 +37,6 @@ Versioned Dataset
 
 ### 🌐 Backend
 - Node.js / Express
+
+### 🎨 Frontend
+- React / Next.js (inside `churniq/`)
