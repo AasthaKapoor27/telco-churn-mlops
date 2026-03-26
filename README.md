@@ -51,16 +51,13 @@ Versioned Dataset
 
 ## 📂 Project Structure
 
-
 telco-churn-mlops/
 │
-├── churniq/ # Full-stack app (frontend + backend)
-├── data/raw/ # Dataset (tracked using DVC)
-├── docs/ # Architecture docs
-├── .dvc/ # DVC config
-├── .dvcignore
+├── churniq/
+├── data/raw/
+├── docs/
+├── .dvc/
 └── README.md
-
 
 ---
 
