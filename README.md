@@ -40,3 +40,7 @@ Versioned Dataset
 
 ### 🎨 Frontend
 - React / Next.js (inside `churniq/`)
+
+---
+
+## 📂 Repository Structure
