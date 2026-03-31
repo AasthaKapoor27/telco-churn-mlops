@@ -44,3 +44,10 @@ Versioned Dataset
 ---
 
 ## 📂 Repository Structure
+.
+├── churniq/ # Full-stack app (frontend + backend)
+├── data/raw/ # Raw dataset (tracked using DVC)
+├── docs/ # Architecture & documentation
+├── .dvc/ # DVC config files
+├── .dvcignore
+└── README.md
