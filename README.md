@@ -1,53 +1,82 @@
-# 🚀 ChurnIQ – Full Stack MLOps Telco Churn Prediction System
+# 🚀 ChurnIQ – Telco Customer Churn Prediction (MLOps + Full Stack)
 
-## 📌 Overview
-**ChurnIQ** is an end-to-end **MLOps-powered full-stack application** that predicts customer churn using the Telco dataset.  
-It integrates **data versioning, model training, backend APIs, and a frontend interface** to simulate a real-world production ML system.
+## 📌 What is this?
+ChurnIQ is an **end-to-end machine learning system** that predicts whether a telecom customer will churn.
 
----
-
-## 🎯 Problem Statement
-Customer churn is a major challenge for telecom companies.  
-This project aims to:
-- Predict whether a customer will churn
-- Help businesses take proactive retention actions
+It combines:
+- 📊 Machine Learning model
+- 🔄 MLOps pipeline using DVC
+- 🌐 Backend API
+- 🎨 Frontend interface
 
 ---
 
-## 🏗️ Project Architecture
-User → Frontend (ChurnIQ UI) → Backend API → ML Model → Prediction Output
-↑
-DVC Pipeline
-↑
-Versioned Dataset
+## 🎯 Why this project?
+Customer churn directly impacts revenue.
+
+This system helps:
+- Identify customers likely to leave
+- Enable proactive retention strategies
 
 ---
 
 ## ⚙️ Tech Stack
 
-### 🧠 Machine Learning
-- Python
-- Scikit-learn
-- Pandas
-- NumPy
+**Machine Learning**
+- Python, Scikit-learn, Pandas, NumPy
 
-### 🔄 MLOps
+**MLOps**
 - DVC (Data Version Control)
 - Git & GitHub
 
-### 🌐 Backend
-- Node.js / Express
+**Backend**
+- Node.js + Express
 
-### 🎨 Frontend
-- React / Next.js (inside `churniq/`)
+**Frontend**
+- React / Next.js
 
 ---
 
-## 📂 Repository Structure
-.
+## 🏗️ How it Works
+
+
+User Input → Frontend → Backend API → ML Model → Prediction
+↑
+DVC Pipeline
+↑
+Versioned Dataset
+
+
+---
+
+## 📂 Project Structure
+
+
+telco-churn-mlops/
+│
 ├── churniq/ # Full-stack app (frontend + backend)
-├── data/raw/ # Raw dataset (tracked using DVC)
-├── docs/ # Architecture & documentation
-├── .dvc/ # DVC config files
+├── data/raw/ # Dataset (tracked using DVC)
+├── docs/ # Architecture docs
+├── .dvc/ # DVC config
 ├── .dvcignore
 └── README.md
+
+
+---
+
+## 🚀 How to Run
+
+### 1. Clone the repo
+```bash
+git clone https://github.com/AasthaKapoor27/telco-churn-mlops.git
+cd telco-churn-mlops
+2. Pull dataset using DVC
+dvc pull
+3. Run backend
+cd churniq/backend
+npm install
+npm start
+4. Run frontend
+cd churniq/frontend
+npm install
+npm run dev
